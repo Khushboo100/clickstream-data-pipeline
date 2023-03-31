@@ -12,6 +12,7 @@ object FileCleanser {
 
 
   /** ************MODIFYING COLUMN DATA TYPES******************** */
+  
   //converts string to timestamp format
   def stringToTimestamp(inputDF: DataFrame, colName: String, inputFormat: String): DataFrame = {
     check(inputDF, Seq(colName))
